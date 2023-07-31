@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+    background-color: rgb(10, 10, 34);
+    margin: 60px 15px;
+}
+.stat-images{
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(stats-img/image-header-mobile.jpg);
+    border-radius: 10px;
+}
+.mobile{
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(238, 130, 238, 0.4);
+}
+.stat-details{
+    background-color: rgb(34, 34, 65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.get-insight{
+   padding-bottom: 20px;
+   font-size: 20px;
+}
+span{
+    color: rgb(156, 48, 156);
+}
+.discover{
+    color: rgb(184, 174, 174);
+    line-height: 23px;
+    padding-bottom: 30px;
+}
+.ratings span{
+    color: rgb(184, 174, 174);;
+    font-size: 10px;
+}
+.comp, .temp, .query{
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media (min-width: 1000px) {
+    .stat-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .stat-images{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 30px 30px;
+    }
+    .stat-images{
+        width: 50%;
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        background-image: url(stats-img/image-header-desktop.jpg);
+        border-radius: 10px;
+    }
+    .mobile{
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(238, 130, 238, 0.4);
+    }
+    .stat-details{
+        width: 100%;
+        background-color: rgb(34, 34, 65);
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 20px 20px;
+        border-radius: 10px;
+    }
+    .get-insight{
+       padding-bottom: 20px;
+       font-size: 20px;
+    }
+    span{
+        color: rgb(156, 48, 156);
+    }
+    .discover{
+        color: rgb(184, 174, 174);
+        line-height: 23px;
+        padding-bottom: 50px;
+    }
+    .ratings{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ratings span{
+        color: rgb(184, 174, 174);;
+        font-size: 10px;
+        padding-right: 10px;
+    }
+    .comp, .temp, .query{
+        padding-bottom: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+}
